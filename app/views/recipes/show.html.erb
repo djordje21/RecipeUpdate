@@ -16,7 +16,12 @@
 			<div class="row">
 				<div class="col-md-4">
 					<!-- mesto za komentare/like -->
-					
+					<br>
+					<h2><%= @recipe.comments.count %>: Comments</h2>
+						<%= render @recipe.comments %>
+						<h3>Add a Comment </h3>
+						<%= render "comments/form" %>
+					<br>
 				</div>
 			</div>	
 
